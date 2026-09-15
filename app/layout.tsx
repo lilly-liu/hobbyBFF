@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, Nunito } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { PwaRegister } from '@/components/pwa-register'
+import { assetPath } from '@/lib/asset-path'
 
 const nunito = Nunito({
   subsets: ['latin'],
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     'Discover a hobby or class you would love to try in Boston, and find a friend to try it with. A playful demo prototype.',
   generator: 'v0.app',
   appleWebApp: { capable: true, title: 'hobbyBFF', statusBarStyle: 'default' },
-  icons: { apple: '/pwa-192.png' },
+  icons: { apple: assetPath('/pwa-192.png') },
 }
 
 export const viewport: Viewport = {

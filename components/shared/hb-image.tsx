@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { ImageOff } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { assetPath } from '@/lib/asset-path'
 
 interface HbImageProps {
   src: string
@@ -35,7 +36,7 @@ export function HbImage({
       ) : (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={src || '/placeholder.svg'}
+          src={assetPath(src || '/placeholder.svg')}
           alt={alt}
           sizes={sizes}
           loading={priority ? 'eager' : 'lazy'}

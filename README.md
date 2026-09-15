@@ -54,6 +54,12 @@ The service worker provides an offline reconnection page, not a fully offline ap
 
 Before real users: add authentication, server-authorized data access, actual mutual matching and messaging, moderation/reporting, and provider-backed class schedules. Current navigation uses in-memory screen state, so refreshing returns to Discover. Image assets are from the original v0 export; review provenance before commercial release.
 
+## GitHub Pages deployment
+
+The `Deploy GitHub Pages` workflow builds a static export and publishes `out/` on pushes to `main` or manual dispatch. Enable Pages with GitHub Actions as its source in repository Settings → Pages. Intended URL: https://lilly-liu.github.io/hobbyBFF/.
+
+Run `GITHUB_PAGES=true pnpm build` to validate the export locally. This sets the `/hobbyBFF` base path for bundles, photos, manifest icons, and the service worker. Normal local development remains at `/`. GitHub Pages must be available for the repository's visibility and account plan.
+
 ## Origin
 
 Initial UI generated with v0, then imported into this dedicated repository. The source ZIP, dependency folders, build output, and environment files are excluded from Git. The first PR establishes the functional prototype while keeping the exported visual identity.
