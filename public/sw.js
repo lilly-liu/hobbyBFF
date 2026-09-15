@@ -1,0 +1,14 @@
+// Cache only the offline fallback. Never cache private messages or app responses.
+const CACHE = 'hobbybff-offline-v1'
+self.addEventListener('install', (event) => {
+  event.waitUntil(caches.open(CACHE).then((cache) => cache.add('/offline.html')))
+  self.skipWaiting()
+})
+self.addEventListener('activate', (event) => {
+  event.waitUntil(self.clients.claim())
+})
+self.addEventListener('fetch', (event) => {
+  if (event.request.mode === 'navigate') {
+    event.respondWith(fetch(event.request).catch(() => caches.match('/offline.html')))
+  }
+})
