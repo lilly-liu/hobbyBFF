@@ -40,8 +40,7 @@ export function MessagesView({ conversationId }: { conversationId?: string }) {
         </span>
         <h1 className="font-serif text-2xl font-semibold">No matches yet</h1>
         <p className="max-w-sm text-sm text-muted-foreground text-pretty">
-          When you and a buddy both say yes, your chat opens up here — with the class
-          you&apos;re trying pinned to the top.
+          Once you both express interest, you can chat here and pick a class.
         </p>
         <Button onClick={() => nav.navigate({ view: 'buddies' })}>
           Find a buddy

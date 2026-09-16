@@ -64,7 +64,7 @@ function greetingFor(buddyId: string): Conversation | null {
         id: `${buddyId}-hello`,
         from: 'them',
         kind: 'text',
-        text: `Hi! We matched over ${buddy.wantsToTryLabel.toLowerCase()} — I’m genuinely excited and a little nervous. When are you usually free?`,
+        text: `Hi! Have you tried ${buddy.wantsToTryLabel.toLowerCase()} before? When are you free to go?`,
         createdAt: Date.now(),
       },
     ],

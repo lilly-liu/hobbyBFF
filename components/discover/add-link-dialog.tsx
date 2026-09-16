@@ -43,20 +43,18 @@ export function AddLinkDialog() {
       <DialogContent>
         <DialogTitle className="font-serif text-xl">Add a class you found</DialogTitle>
         <DialogDescription>
-          Paste a link to a class you already want to take, and we&apos;ll help you
-          find a buddy for exactly that one.
+          Paste a class link to preview this feature. Links aren&apos;t saved in the demo.
         </DialogDescription>
 
         {saved ? (
           <div className="mt-2 rounded-xl border border-sage/50 bg-sage/15 p-4 text-sm text-foreground">
             <p className="flex items-center gap-2 font-medium">
               <Sparkles className="size-4 text-primary" aria-hidden="true" />
-              Got it — saved to your intentions.
+              Link preview complete.
             </p>
             <p className="mt-1 text-muted-foreground">
-              In the full app we&apos;d pull the class details and surface buddies who
-              want to try it too. For this demo, browse the classes below to keep
-              going.
+              This demo doesn&apos;t import classes yet. Close this window to browse
+              the sample classes.
             </p>
           </div>
         ) : (

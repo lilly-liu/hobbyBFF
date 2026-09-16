@@ -107,7 +107,7 @@ export function BuddiesView({
             Find your buddy
           </h1>
           <p className="mt-1.5 text-muted-foreground text-pretty">
-            People near you who want to try the same things — for real, together.
+            Find someone nearby who wants to try the same hobby.
           </p>
         </div>
       )}

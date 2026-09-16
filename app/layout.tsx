@@ -19,9 +19,9 @@ const bricolage = Bricolage_Grotesque({
 })
 
 export const metadata: Metadata = {
-  title: 'hobbyBFF — Your next first, together',
+  title: 'hobbyBFF | Try something new with a friend',
   description:
-    'Discover a hobby or class you would love to try in Boston, and find a friend to try it with. A playful demo prototype.',
+    'Discover a hobby or class you would love to try in Boston, and find a friend to try it with. Browse classes and find a buddy.',
   generator: 'v0.app',
   appleWebApp: { capable: true, title: 'hobbyBFF', statusBarStyle: 'default' },
   icons: { apple: assetPath('/pwa-192.png') },
