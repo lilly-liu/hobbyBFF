@@ -121,7 +121,7 @@ export function OnboardingView() {
           {step === 0 && (
             <StepShell
               title="What do you want to try?"
-              subtitle="Pick anything that sparks curiosity. We’ll match you with classes and people around these."
+              subtitle="Choose hobbies you want to try. We’ll use these to suggest classes and buddies."
             >
               <div className="flex flex-wrap gap-2.5">
                 {HOBBIES.map((h) => (
@@ -181,7 +181,7 @@ export function OnboardingView() {
           {step === 2 && (
             <StepShell
               title="Who’s your ideal buddy?"
-              subtitle="This stays flexible — it just helps us make warmer introductions."
+              subtitle="Set your preferences. You can change them later."
             >
               <div className="mb-8">
                 <div className="mb-3 flex items-baseline justify-between">
@@ -243,7 +243,7 @@ export function OnboardingView() {
 
           {step === 3 && (
             <StepShell
-              title="Last thing — introduce yourself"
+              title="Tell us about yourself"
               subtitle="This is what potential buddies will see first."
             >
               <div className="flex flex-col gap-5">

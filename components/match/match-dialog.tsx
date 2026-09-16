@@ -94,7 +94,7 @@ export function MatchDialog({ buddyId, onClose }: MatchDialogProps) {
               </div>
 
               <p className="mt-3 text-center text-[11px] text-muted-foreground">
-                Simulated match for the demo — {buddy.firstName} isn&apos;t a real
+                Demo match. {buddy.firstName} isn&apos;t a real
                 person.
               </p>
             </div>

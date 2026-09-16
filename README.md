@@ -1,6 +1,6 @@
 # hobbyBFF
 
-“I’m excited to try this—and I feel good about going with you.”
+“I’m excited to try this, and I feel good about going with you.”
 
 hobbyBFF helps adults discover Boston-area classes, choose a compatible buddy through profiles and mutual interest, and make a plan together. This first version is an interactive v0 export with local demo state, adapted for mobile and desktop browsers.
 

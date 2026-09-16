@@ -148,8 +148,7 @@ export function DiscoverView() {
         <div className="mb-16 flex flex-col items-center gap-3 rounded-2xl border border-dashed border-border bg-card/60 px-6 py-16 text-center">
           <p className="font-serif text-xl font-semibold">Nothing matches just yet</p>
           <p className="max-w-sm text-sm text-muted-foreground text-pretty">
-            Try widening your dates, budget, or neighborhood — Boston has more to try
-            than this.
+            Try different dates, a higher budget, or another neighborhood.
           </p>
           <Button
             variant="outline"

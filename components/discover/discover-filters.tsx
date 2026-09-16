@@ -123,7 +123,7 @@ export function DiscoverFilters({
             </div>
           </FieldGroup>
 
-          <FieldGroup label={`Budget — up to ${formatPrice(filters.budget)} per person`}>
+          <FieldGroup label={`Budget: up to ${formatPrice(filters.budget)} per person`}>
             <Slider
               value={[filters.budget]}
               min={15}

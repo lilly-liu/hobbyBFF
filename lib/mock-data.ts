@@ -435,7 +435,7 @@ export const BUDDIES: Buddy[] = [
     wantsToTryLabel: 'Botanical watercolor basics',
     availability: ['Saturday afternoons', 'Sunday afternoons'],
     bio: 'Software engineer who needs a hobby that has nothing to do with a keyboard. Quiet company is my favorite company.',
-    headlinePrompt: 'Let’s paint mediocre plants and call it self-care.',
+    headlinePrompt: 'I’d like to learn to paint the plants in my apartment.',
     interests: ['watercolor', 'pottery', 'hiking', 'bookstores'],
     sharedInterests: ['watercolor', 'pottery'],
     reason: 'You’re both into calm, crafty weekends and free Saturday afternoons.',
@@ -458,7 +458,7 @@ export const BUDDIES: Buddy[] = [
     wantsToTryLabel: 'Shoot film in the city',
     availability: ['Weekday evenings', 'Sunday afternoons'],
     bio: 'Grad student and certified overthinker. I like projects with a tangible result I can hold at the end.',
-    headlinePrompt: 'Two people pretending to know what an aperture is, together.',
+    headlinePrompt: 'I have a film camera and could use some help figuring it out.',
     interests: ['film photography', 'salsa', 'painting', 'record stores'],
     sharedInterests: ['film photography'],
     reason: 'You’re both curious about film photography around Cambridge.',
@@ -509,7 +509,7 @@ export const BUDDIES: Buddy[] = [
     sharedInterests: ['salsa', 'dance'],
     reason: 'You both want to try salsa and can do weekday evenings.',
     socialPace: 'Coffee afterward',
-    intentions: 'Looking to get out more and meet people through doing, not small talk.',
+    intentions: 'Looking for someone to take a weekly dance class with.',
     prompts: [
       { q: 'My beginner energy is…', a: 'Nervous but game, and secretly competitive.' },
       { q: 'An ideal first hangout…', a: 'The lesson, then stay for a bit of the social.' },
@@ -566,7 +566,7 @@ export const BUDDIES: Buddy[] = [
 
 export const CONVERSATION_STARTERS: Record<string, string[]> = {
   Pottery: [
-    'Should we aim for “mug” or accept “ashtray” as our ceiling?',
+    'Have you taken a pottery class before?',
     'Morning or evening class person?',
     'Confession: I have watched way too many pottery videos.',
   ],
@@ -582,8 +582,8 @@ export const CONVERSATION_STARTERS: Record<string, string[]> = {
   ],
   Climbing: [
     'Are we the “try hard” type or the “take breaks” type?',
-    'Evening session works better for me — you?',
-    'I’ll bring the chalk energy if you bring the calm.',
+    'Evenings work better for me. How about you?',
+    'Do we need to rent climbing shoes?',
   ],
   Art: [
     'Low bar: let’s just make one thing we don’t hate.',
@@ -592,7 +592,7 @@ export const CONVERSATION_STARTERS: Record<string, string[]> = {
   ],
   Outdoors: [
     'How early is too early for you?',
-    'Bringing snacks — any requests?',
+    'I’m bringing snacks. Any requests?',
     'Rain plan or push to next weekend if it’s gross?',
   ],
 }
@@ -660,7 +660,7 @@ export function seedConversations(): Record<string, Conversation> {
           id: 'm1',
           from: 'them',
           kind: 'text',
-          text: 'Hi! So glad we matched — I have genuinely never climbed anything taller than a stepladder.',
+          text: 'Hi! This will be my first time climbing. Have you been before?',
           createdAt: now - 1000 * 60 * 60 * 26,
         },
         {

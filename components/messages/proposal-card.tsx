@@ -64,14 +64,14 @@ export function ProposalCard({
 
   function accept() {
     updateProposal(buddyId, proposal.id, 'agreed')
-    sendMessage(buddyId, 'That works for me — locking it in!')
+    sendMessage(buddyId, 'That works for me. See you there!')
   }
 
   function simulateReply() {
     updateProposal(buddyId, proposal.id, 'agreed')
     sendBuddyMessage(
       buddyId,
-      'Perfect, that works! Adding it to my calendar now.',
+      'Sounds good! I’ll add it to my calendar.',
     )
   }
 
@@ -161,7 +161,7 @@ export function ProposalCard({
         {proposal.status === 'booking_pending' && (
           <div className="flex flex-col gap-2">
             <p className="text-center text-xs text-muted-foreground text-pretty">
-              Booking handoff started — each of you reserves a seat with the provider.
+              Each of you needs to book a seat with the provider.
             </p>
             <Button
               variant="outline"

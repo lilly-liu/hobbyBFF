@@ -207,8 +207,7 @@ export function ClassDetailsView({ classId }: { classId?: string }) {
             </div>
             <p className="mt-3 flex items-start gap-2 rounded-xl bg-butter/25 px-3 py-2.5 text-xs text-butter-foreground">
               <Info className="mt-0.5 size-3.5 shrink-0" aria-hidden="true" />
-              Check availability with the provider before you plan — seats aren&apos;t
-              reserved through hobbyBFF in this demo.
+              This is a sample class. No seats are reserved through this demo.
             </p>
           </section>
 
@@ -230,8 +229,7 @@ export function ClassDetailsView({ classId }: { classId?: string }) {
                   ))}
               </div>
               <p className="text-sm text-muted-foreground">
-                {listing.interestedCount} people want to try {listing.subject} — find
-                one to go with.
+                {listing.interestedCount} people are interested in {listing.subject}.
               </p>
             </div>
           </section>
